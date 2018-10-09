@@ -13,16 +13,46 @@
 */
 
 
+//Computer Decides Who is the Winner or the Loser //
+
+var wins = 0;
+var looses =0;
+
 
 
 //Array of blanks where gamers can type the guess letters //
 
+
+
 //Random names of characthers //
+
+var guessStart = function () {
+var charLib =[
+"Joyce",
+"Jim",
+"Mike",
+"Eleven",
+"Dustin",
+"Lucas",
+"Will",
+
+];
+
+
+}
+
+
 
 
 //Game Loop//
+
+
 //Show Players their Progress//
+
+
 //Take input from the players//
+
+
 //Update answerArray and remaining letters for every correct guess//
 
 
