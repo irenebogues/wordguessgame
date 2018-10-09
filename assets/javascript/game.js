@@ -42,9 +42,34 @@ var charLib =[
 }
 
 
+// Rules of the game or the Game Loop//
+
+var compPick = charLib;
+var compGuess = compPick[Math.floor(Math.random() * compPick.length)];
+var compGuessWordLength = compGuess.length;
+var compuGuessLetters = compGuess.split("");
+var userGuessAttempts = computerGuess.length + 5;
+var displayUnderline = [computerGuessWordLength];
+var userGuessLetter = "";
+var output = "";
+var win = compGuessWordLength;
+var userKeys = [];
+var userRepeatTest="";
 
 
-//Game Loop//
+for (i = 0; i < compGuessWordLength; i++) {
+    displayUnderline[i] = "_ ";
+    output = output + displayUnderline[i];
+
+
+};
+
+
+
+
+
+
+
 
 
 //Show Players their Progress//
