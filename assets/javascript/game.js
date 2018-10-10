@@ -42,14 +42,14 @@ var charLib =[
 }
 
 
-// Rules of the game or the Game Loop//
+// Rules of the game and Show Players Progress//
 
 var compPick = charLib;
 var compGuess = compPick[Math.floor(Math.random() * compPick.length)];
 var compGuessWordLength = compGuess.length;
-var compuGuessLetters = compGuess.split("");
-var userGuessAttempts = computerGuess.length + 5;
-var displayUnderline = [computerGuessWordLength];
+var compGuessLetters = compGuess.split("");
+var userGuessAttempts = compGuess.length + 5;
+var displayUnderline = [compGuessWordLength];
 var userGuessLetter = "";
 var output = "";
 var win = compGuessWordLength;
@@ -61,11 +61,7 @@ for (i = 0; i < compGuessWordLength; i++) {
     displayUnderline[i] = "_ ";
     output = output + displayUnderline[i];
 
-
 };
-
-
-
 
 
 
