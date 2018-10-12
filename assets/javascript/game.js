@@ -13,7 +13,7 @@
 */
 
 
-//Computer Decides Who is the Winner or the Loser //
+//Computer Decides Who is the Winner or the Loser thru counter variables//
 
 var wins = 0;
 var looses =0;
@@ -27,20 +27,13 @@ var looses =0;
 //Random names of characthers //
 
 var guessStart = function () {
-var charLib =[
-"Joyce",
-"Jim",
-"Mike",
-"Eleven",
-"Dustin",
-"Lucas",
-"Will",
-
-];
-
-
+var charLib = ["Joyce", "Jim", "Mike", "Eleven", "Dustin", "Lucas", "Will" ];
 }
 
+console.log(charLib); 
+
+
+//Game Start Function//
 
 // Rules of the game and Show Players Progress//
 
@@ -66,12 +59,16 @@ for (i = 0; i < compGuessWordLength; i++) {
 
 
 
-
-
 //Show Players their Progress//
 
 
+
+
+//Shows photos when guess guessed the right characther //
+
+
 //Take input from the players//
+
 
 
 //Update answerArray and remaining letters for every correct guess//
