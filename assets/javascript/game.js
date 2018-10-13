@@ -15,15 +15,6 @@
 
 // On clicking Stranger Things Theme Song//
 
-var x = document.getElementById("myAudio"); 
-
-function playAudio() { 
-    x.play(); 
-} 
-
-function pauseAudio() { 
-    x.pause(); 
-} 
 
 
 //Computer Decides Who is the Winner or the Loser thru counter variables//
@@ -33,8 +24,6 @@ var looses =0;
 
 window.wins = wins;
 window.losses = losses;
-
-
 
 
 
@@ -60,7 +49,6 @@ function myPlayAgain() {
     location.reload();
     gameStart();
 };
-
 
 
 
