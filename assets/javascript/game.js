@@ -71,7 +71,6 @@ for (var i = 0; i < compGuessWordLength; i++) {
 }
 
 
-
 //Show Players their Progress and Game Status//
 
 document.getElementbyId("#Wins").textContent = wins;
@@ -91,7 +90,7 @@ for (s = 0; s < compGuessWordLength; s++) {
     win--;
 }
 output = output + displayUnderline[s] + " ";
-document.getElementbyId ("#user_output").textContent = output;
+document.getElementbyId ("#guess_output").textContent = output;
 
 
 
