@@ -5,14 +5,23 @@
 Assuming that the players are familiar with the hit TV series.
 
 #gettingstarted
+Create an array of the charachters of Stranger Things
+Create an array of random Stranger Things Characther
+Create underscores based on length of the characthers
+Collect users guesses
+Check if guess is right 
+If the guesses' is right then push it to right.
+If the guesses' is wrong then push it to wrong.
+
+
 
 #Rules of the game:
 
-#Pick a random Stranger Things Main Characthers
-
+If the guessed characther is right then push it to right.
+If the guessed characther  is wrong then push it to wrong.
 While the stranger things characther has not been guessed {
- Show the player their current progress
- Get the player's guesses...**
+Show the player their current progress thru a series of underscores
+Get the player's guesses...**
 
  
  If the guess is not a single letter in the listed characthers of Stranger Things {
