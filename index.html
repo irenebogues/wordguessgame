@@ -13,19 +13,14 @@
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Faster+One" >
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
   </head>
-<body>            
-    <div class="jumbotron jumbotron-fluid" style="background-color: black;">
-      <h3 class="display-4" style="color: lightcoral; text-align: center;">Guess Your Favorite Stranger Things Characther</h3>
-    <div class="container">
-    <div class="row">
-    <div class="col-lg-6 col-lg-6">
-      <div class="media">
-        <img class="img-fluid" id="strangerthings" src="assets/images/stranger.png" style="width: 100%; height: 20%;">
-            </div>        
-          </div>
+  
+<body class="flex justify-center flex-wrap">        
+      <div class= "media">
+        <img src="assets/images/stranger.png" style="width: 50%;">
+            
         </div>
-    <div class="row">
-    <div class="col-xs-12 col-lg-6">
+    <!--This is where the game screen game starts-->
+    <div id="stranger" class="flex no-padding justify-center flex-wrap"></div>
     <h1 class="text-danger text-center"> If you can save Eleven, you can save the world! Beat the Demorgorgon and guess your favorite Stranger Things Characther.</h1>
     <br>
     <br>
@@ -35,9 +30,6 @@
     <h2 class="text-monospace text-success" id="guess_output"></h2>  
     <br>
     <h3 class="text-secondary" id="guess_entry"></h3>      
-            </div>
-          </div>
-        </div>
       <br>
       <br>
       <br>
@@ -46,7 +38,7 @@
       <div class="row">
         <div class="col-lg-6 col-xl-6">
             <!--The user guessed the correct characther container -->
-            <button type="button" class="btn btn-primary btn-lg btn btn-danger"><span id="Wins"></span>You Win! You Defeat the Demogorgon</span></button>            
+            <button type="button" class="btn btn-primary btn-lg btn btn-danger"><span id="Wins">You Win! You Defeat the Demogorgon</span></button>            
           <br>
           
     <!--The user guessed the wrong characther container -->
@@ -65,7 +57,7 @@
             </div>
         </div>
       </div>
-    </div>
+    
   
 </body>
 <!-- JavaScript Here -->

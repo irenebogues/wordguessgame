@@ -1,1 +1,11 @@
 /* Welcome to Stranger Things Guess the Characther*/
+
+body {
+background-color: black;
+display: block;
+align-items: center;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: x-large;
+color: red;
+
+}

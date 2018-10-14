@@ -17,35 +17,45 @@
 
 
 //Array of characther variables
+var keys = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z]
+//Array of Stranger Things Characther Library
 var charLib = ["joyce", "jim", "mike", "eleven", "dustin", "lucas", "will"]
 //console logging characther variables
-console.log (charLib);
+//console.log (charLib);
 
-//Empty array of variables to store Guesschosen letters
+//Empty array of variables to store  chosen letters
 
+//Number of user guesses
 var compGuess = "";
+//Lenght of characthers that user guessed
 var compGuessWordLength = [];
+// Number of stored Stranger Things characthers or keys
 var blanks = 0;
-var blanksandCorrectCompGuess = [];
+//Number of correct guesses 
+var blankandCorrectCompGuess = [];
+//Number of wrong guess
 var wrongCompGuess= [];
 
 
-//Computer Decides Who is the Winner or the Loser thru counter variable//
-
+//Computer Decides Who is the Winner or the Loser thru the counter variable//
+//Number of wins of user
 var wins = 0;
+//Number of losses of user
 var losses = 0;
+//Number of guess chance of playing guessing game
 var guessesRemaining = 4; 
 
 
-//Start of Game Function//
+//Start of Game Function/
+
 // Rules of the game and Show Players Progress thru these variables//
 function gameStart() {
 // computer generates random word from charLib array
-var compGuess = charLib[Math.floor(Math.random() * charLib.length)]; 
-console.log (compGuess)
+var compGuess = charLib [Math.floor(Math.random() * charLib.length)]; 
+//console.log (compGuess)
 // stores lenght of characthers
 var compGuessWordLength = compGuess.length;
-console.log(compGuess)
+//console.log(compGuess)
 // computer split the individual characthers and store in new array
 var compGuessLetters = compGuess.split("");
 console.log(compGuessLetters)
