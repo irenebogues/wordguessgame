@@ -156,15 +156,4 @@ else {
 
 
 
-//This function to Resets the Game
 
-function myContinue () {
-    gameStart ();
-    output="";
-    userKeys="";
-    };
-
-function myPlayAgain() {
-
-    gameStart();
-}
