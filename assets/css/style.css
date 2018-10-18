@@ -11,8 +11,73 @@ color: red;
 }
 
 
+h1 {
+    font-size: 43px;
+    border: solid 5px red;
+    background: black;
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right:10%;
+    padding: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-size: 20px;
+    padding-top: 10px;
+}
 
 
-.hawkinsworld {
+img {
+    margin: 10px;
+}
 
+
+.sidebar {
+    padding: 5px;
+    position: relative;
+    border-top: solid red 2px;
+    border-bottom: solid red 2px;
+    margin-bottom: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-size: 12px;
+}
+
+span {
+    border: solid red 2px;
+    padding-left: 3px;
+    padding-right:3px;
+    background-color: black; 
+    font-size: 15px;
+}
+
+.container {
+    border: solid 5px red;
+}
+
+
+.row {
+    background-color: white;
+    margin-top: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5px;
+    text-align: center;
+    border: solid 3px red;
+}
+
+
+
+#hawkinsword {
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', ;
+    color: red;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#scoreboard {
+    padding: 20px;
 }

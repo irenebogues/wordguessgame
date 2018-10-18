@@ -27,40 +27,80 @@
 
     <h2 class="text-danger text-center">Press any keys to play!</h2>     
 
-       
-      <br>
-      <br>
+    
+      
       <br>
       <br>
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 col-xl-6">
-                <div>
+                    <div>
                         <h3 id="hawkinsworld">_ _ _ _ _</h3>
                     </div>
-                    
-            <!--The user guessed the correct characther container -->
-            <button type="button" class="btn btn-primary btn-lg btn btn-danger"><span id="Wins">You Win! You Defeat the Demogorgon</span></button>            
-          <br>
-          
-    <!--The user guessed the wrong characther container -->
 
-            <button type="button" class="btn btn-primary btn-lg btn btn-danger"><span id="Looses">You Loose! The Demorgon lair has doubled!</span></button>          
-        </div>
-            <!--This is where the game resets if guess choose to restart it-->
-        <div class="container">
-        <div class="row">
-        <div class="col-xs-12 col-lg-6">
-                <button type="button" onclick="myContinue()" class="btn btn-primary btn-lg btn btn-danger" > Continue? YES!</button>          
-                <br> 
-                <button type="button" onclick="myPlayagain()" class="btn btn-primary btn-lg btn btn-danger">Play again and Defeat the Demorgorgon!</button>          
-        </div>
+                    <div id="scoreboard">
+                        <div class="sidebar">
+                            <h3>Guesses Left:
+                            <span id="guesseslives"></span>
+                        </h3>
+                    </div>
+                    <div class="sidebar">
+                        <h3> WINS:
+                            <span id="strangerspy"></span>
+                        </h3>
+
+                    </div>
+                    <div class="sidebar">
+                        <h3> LOOSES:
+                            <span id="demospy"></span>
+
+                        </h3>
+                    </div>
+                    <div class="sidebar">
+                        <h3>The letter that you guessed is wrong:
+                            <span id="playerguesses"></span>
+                        </h3>
+
+           <div>
+               <!--Joyce-->
+            <audio id="joyce">
+                <source scr="./assets/sounds/joyce.mp3" type="audio/mp3">
+            </audio>
+
+            <!--Steve-->
+            <audio id="steve">
+                <source scr="./assets/sounds/steve.mp3" type="audio/mp3">
+             </audio>
+
+
+            <!--Mike-->
+            <audio id="mike">
+                    <source scr="./assets/sounds/mike.mp3" type="audio/mp3">
+                </audio>
+
+            <!--Eleven-->
+            <audio id="eleven">
+                    <source scr="./assets/sounds/eleven.mp3" type="audio/mp3">
+                </audio>
+
+            <!--Dustin-->
+            <audio id="dustin">
+                    <source scr="./assets/sounds/dustin.mp3" type="audio/mp3">
+                </audio>
+
+           </div>
+            <!--Lucas-->
+            <audio id="lucas">
+                <source scr="./assets/sounds/lucas.mp3" type="audio/mp3">
+                </audio>
+            
+            <!--Will-->
+            <audio id="will">
+                <source scr="./assets/sounds/will.mp3" type="audio/mp3">
+                </audio>
+
             </div>
-            </div>
-        </div>
-      </div>
-    
+
   
 </body>
 <!-- JavaScript Here -->

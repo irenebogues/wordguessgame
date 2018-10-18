@@ -248,8 +248,6 @@ document.onkeyup = function (event) {
 checkStranger (guesseslives);
 terminate();
 
-
-
 document.getElementById("playerguesses").innerHTML = " " + 
 guesseslives.join (" ");
 }
