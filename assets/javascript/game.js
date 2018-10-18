@@ -3,7 +3,7 @@
 // Always remind yourself to breath and write to do's every after work so that you will remember what to do next and at the same try coding 1 piece at at time//
 /* The Characther of Stranger Things:
 1. Joyce
-2. Jim
+2. Steve
 3. Mike
 4. Eleven
 5. Dustin
@@ -18,7 +18,7 @@
 
 //Array of characther variables
 //Array of Stranger Things Characther Library
-var charLib = ["joyce", "jim", "mike", "eleven", "dustin", "lucas", "will"];
+var charLib = ["joyce", "steve", "mike", "eleven", "dustin", "lucas", "will"];
 //console logging characther variables
 //console.log (charLib);
 
@@ -27,7 +27,7 @@ var charLib = ["joyce", "jim", "mike", "eleven", "dustin", "lucas", "will"];
 //Number of user guesses
 var compGuess = "";
 //Lenght of characthers that user guessed
-var compGuessWordLength = [];
+var compGuessWordLength = []
 // Number of stored Stranger Things characthers or keys
 var blanks = 0;
 //Number of correct guesses 
@@ -45,20 +45,18 @@ var losses = 0;
 var guesseslives = 4; 
 
 
-//Start of Game Function/
+//Start of Game Functions/
 
 // Rules of the game and Show Players Progress thru these variables//
 function gameStart() {
 // computer generates random word from charLib array
 compGuess = charLib[Math.floor(Math.random() * charLib.length)]; 
-//console.log (compGuess)
 
 // computer split the individual characthers and store in new array
-compGuessWordLenght = compGuess.split("");
-//console.log(compGuessWordLenght)
 
-blanks = compGuessWordLenght;
+compGuessWordLength= compGuess.split("");
 
+blanks = compGuessWordLength.length;
 
 //This is to create a loop in order to generate underline for each letter stored in compGuessWordLength
 
@@ -67,93 +65,196 @@ for (var i = 0; i < compGuessWordLength; i++) {
 
 }
 
-
-}
-
-
 //Show Players their Progress and Game Status//
+document.getElementById("hawkinsworld").innerHTML = "  " +
+blankandCorrectCompGuess.join (" ");
 
-document.getElementbyId("#Wins").textContent = wins;
-document.getElementbyId("#Losses").textContent = looses;
-document.getElementbyId("#Guess_Left").textContent = "You have " + userGuessAttempts + "Attempts";
-document.getElementbyId("#guess_output").textContent = output;
-document.onkeydown = function (event) {
-
-// 
-    var output ="";
-    var compGuessWordLength = event.key;
-    userKeys = userKeys + compGuessWordLength + ", ";
-    document.getElementbyId ("guess_entry").textContent = userKeys;
-for (s = 0; s < compGuessWordLength; s++) {
-    if (compGuessWordLength.toLowerCase() ===compGuessWordLength[s])
-    displayUnderline[s] = compGuessWordLength.toLowerCase();
-    win--;
 }
-output = output + displayUnderline[s] + " ";
-document.getElementbyId ("#guess_output").textContent = output;
+
+
+//Shows photos and play audio when guess guessed the right characther //
+
+var j = document.getElementById("joyce");
+var steve = document.getElementById("steve");
+var mike = document.getElementById("mike");
+var eleven = document.getElementById("eleven");
+var d = document.getElementById("dustin");
+var l = document.getElementById("lucas");
+var w = document.getElementById("will");
+
+//Functions for showing audio and photos of Stranger Things Characther 
+
+//Joyce 
+
+if (compGuessWordLength === charLib [0]) {
+    joyce.pause();
+    steve.pause();
+    mike.pause();
+    eleven.pause();
+    dustin.pause();
+    lucas.pause();
+    will.pause();
+    e.pause();
+    j.play();
+    document.getElementById("image").src = ".assets/images/joyce.jpg";
+
+}
+
+//Steve
+else if (compGuessWordLength === charLib [1]) {
+    joyce.pause();
+    mike.pause();
+    eleven.pause();
+    dustin.pause();
+    lucas.pause();
+    will.pause();
+    e.pause();
+    s.play();
+    document.getElementById("image").src = ".assets/images/steve.jpg";
+
+}
+
+
+//Mike
+else if (compGuessWordLength === charLib [2]) {
+    joyce.pause();
+    steve.pause();
+    eleven.pause();
+    dustin.pause();
+    lucas.pause();
+    will.pause();
+    e.pause();
+    m.play();
+    document.getElementById("image").src = ".assets/images/mike.jpg";
+
+}
+
+//Eleven
+else if (compGuessWordLength === charLib [3]) {
+    joyce.pause();
+    steve.pause();
+    mike.pause();
+    dustin.pause();
+    lucas.pause();
+    will.pause();
+    n.pause();
+    e.play();
+    document.getElementById("image").src = ".assets/images/eleven.jpg";
+
+}
+
+//Dustin
+else if (compGuessWordLength === charLib [4]) {
+    joyce.pause();
+    steve.pause();
+    mike.pause();
+    eleven.pause();
+    lucas.pause();
+    will.pause();
+    n.pause();
+    d.play();
+    document.getElementById("image").src = ".assets/images/dustin.jpg";
+
+}
+
+//Lucas
+else if (compGuessWordLength === charLib [5]) {
+    joyce.pause();
+    steve.pause();
+    mike.pause();
+    eleven.pause();
+    dustin.pause();
+    will.pause();
+    s.pause();
+    l.play();
+    document.getElementById("image").src = ".assets/images/lucas.jpg";
+
+}
+
+//Will
+else if (compGuessWordLength === charLib [6]) {
+    joyce.pause();
+    steve.pause();
+    mike.pause();
+    eleven.pause();
+    dustin.pause();
+    lucas.pause();
+    l.pause();
+    w.play();
+    document.getElementById("image").src = ".assets/images/lucas.jpg";
+
+}
 
 
 
+<<<<<<< HEAD
+=======
+function myContinue () {
+    guesseslives = 4;
+    compGuessWordLength =[];
+    blankandCorrectCompGuess =[];
+    gameStart()
 
-//Shows photos when guess guessed the right characther //
+}
 
-userGuessAttempts--;
-if (win < 1) {
+//Compare Game Rules and Results
 
-    document.getElementbyId("Guess_Left").textContent = "You Win!";
-    wins++;
-    document.getElementbyId("#Wins").
-    HTML = wins;
 
-    var imageShow = output;
-    switch (imageShow) {
-        case " j o y c e ":
-        document.getElementbyId("#word_image").src="assets/images/joyce.jpg";
-        document.getElementbyId("#word_music").src="assets/sounds/you can talk to me.mp3";
-        break;
-
-        case " j i m ":
-        document.getElementbyId("#word_image").src="assets/images/jim.jpg";
-        document.getElementbyId("#word_music").src="assets/sounds/friendship.mp3";
-        break;
-
-        case " m i k e ":
-        document.getElementbyId("#word_image").src="assets/images/mike.jpg";
-        document.getElementbyId("word_music").src="assets/sounds/lay-z-boy.mp3";
-        break;
-
-        case " e l e v e n":
-        document.getElementbyId("#word_image").src="assets/images/eleven.jpg";
-        document.getElementbyId("#word_music").src="assets/sounds/eleven.mp3"
-        break;
-
-        case " d u s t i n ":
-        document.getElementbyId("#word_image").src="assets/images/dustin.jpg";
-        document.getElementbyId("#word_music").src="assets/sounds/kids.mp3";
-        break;
-
-        case " l u c a s":
-        document.getElementbyId("#word_image").src="assets/images/lucas.jpg";
-        document.getElementbyId("#word_music").src="assets/sounds/a kiss.mp3";
-        break;
-
-        case " w i l l ":
-        document.getElementbyId("word_image").src="assets/images/will.jpg";
-        document.getElementbyId("word_music").src="assets/sounds/nancy and barb.mp3";
-        break;
+function checkStranger (stranger) {
+    var strangerThings = false;
+    
+for (var i = 0; i < blanks; i++) {
+if (compGuessWordLength [i] == stranger) {
+    strangerThings = true;
     }
-
-// Update answerArray and remaining letters for every wrong guess //    
-
-} else if (userGuessAttempts < 1) {
-    document.getElementbyId("#Guess_Left").textContent = "You loose!" + "Your answer was " + compGuess.toUpperCase();
-    looses++;
-    document.getElementbyId("#Looses").innerHTML = looses;
 }
+
+if (strangerThings) {
+for (var i = 0; i < blanks; i++) {
+    if (compGuessWordLength[i] == stranger) {
+        blankandCorrectCompGuess [i] = stranger;
+        }
+    }
+}
+
 else {
-    document.getElementbyId("#Guess_Left").textContent = "You have" + userGuessAttempts + "Guessess Left!";
+    wrongCompGuess.push(stranger);
+    guesseslives--;
+}
+
+}
+
+//Final Termination of Demogorgon
+
+function terminate (){
+if (compGuessWordLength.toString () == blankandCorrectCompGuess.toString()) {
+    wins++;
+    Audio()
+    reset()
+    document.getElementById("strangerspy").innerHTML == "  " + wins;
+
+} else if (guesseslives === 0) {
+    losses++;
+    reset()
+    document.getElementById("image") .src = ".assets/images/sadeleven.jpg"
+    document.getElementById("demospy").innerHTML = "  " + blankandCorrectCompGuess.join (" ");
+    document.getElementById("guesseslives").innerHTML = " " + compGuessWordLength;
+}
+}
+
+//Game Start
+
+gameStart()
+document.onkeyup = function (event) {
+    var guesseslives = String.fromCharCode(event.keyCode).toLowerCase();
+checkStranger (guesseslives);
+terminate();
+
+
+
+document.getElementById("playerguesses").innerHTML = " " + 
+guesseslives.join (" ");
 }
 
 
-
-
+>>>>>>> stranger stranger
