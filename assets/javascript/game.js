@@ -187,9 +187,7 @@ else if (compGuessWordLength === charLib [6]) {
 
 
 
-<<<<<<< HEAD
-=======
-function myContinue () {
+function reset () {
     guesseslives = 4;
     compGuessWordLength =[];
     blankandCorrectCompGuess =[];
@@ -257,4 +255,3 @@ guesseslives.join (" ");
 }
 
 
->>>>>>> stranger stranger
